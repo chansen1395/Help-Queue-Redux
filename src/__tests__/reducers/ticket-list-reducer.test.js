@@ -13,6 +13,14 @@ describe('ticketListReducer', () => {
     issue: 'Reducer has side effects.',
     id: 2 }
   }
+
+  let action;
+  const ticketData = {
+    names: 'Ryan & Aimen',
+    location: '4b',
+    issue: 'Redux action is not working correctly.',
+    id: 1
+  };
   
   // DEFAULT TICKET TEST
   test('Should return default state if there is no action type passed into the reducer', () => {
